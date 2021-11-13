@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'webapp/css/homepage.css' %}">
+    <link rel="icon" href="{% static 'webapp/images/dictionary.ico' %}">
+    <title>Dictionary WebApp</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block shadow">
+            <div class="button-block">
+                <h1>{{word}}</h1>
+            </div>
+            <h3>{{meaning}}</h3>
+            <h3>{{synonyms}}</h3>
+            <h3>{{antonyms}}</h3>
+            <div class="button-block">
+                <a href="{% url 'home' %}" class="small" ><button class="small">Back</button></a>
+            </div>
+        </div>
+        <div class="block image">
+            <img src="{% static 'webapp/images/Search-rafiki.png' %}" alt="image">
+        </div>
+    </div>
+</body>
+</html>
