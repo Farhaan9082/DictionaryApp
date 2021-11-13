@@ -11,7 +11,7 @@
     padding: 0;
 }
 
-h1, h3, h4, input, button {
+h2, h3, h4, input, button {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -68,7 +68,6 @@ button {
     border: 2px solid black;
     border-radius: 6px;
     padding: 7px 25px;
-    margin-left: 5px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -104,7 +103,7 @@ button:hover {
     margin: 20px 0px;
 }
 
-.button-block h1 {
+.button-block h2 {
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     margin-bottom: 20px;
@@ -117,14 +116,9 @@ button:hover {
     padding: 30px;
 }
 
-
-@media only screen and (max-width: 1068px) {
-    .container h1 {
-        font-size: 56px;
-    }
-    
-    .container h3 {
-        font-size: 14px;
+@media only screen and (min-width: 1180px) {
+    .shadow {
+        height: 440px;
     }
 }
 
@@ -141,9 +135,13 @@ button:hover {
     }    
 }
 
-@media only screen and (max-width: 586px) {
-    .container {
-        padding: 30px;
+@media only screen and (max-width: 600px) {
+    .button-block h2 {
+        font-size: 36px;
+    }
+
+    .block h3 {
+        font-size: 14px;
     }
 
     .image img {
@@ -152,49 +150,30 @@ button:hover {
     }
 }
 
-@media only screen and (max-width: 425px) {
-    .container h1 {
-        font-size: 42px;
-        line-height: 50px;
+@media only screen and (max-width: 500px) {
+    .button-block h2 {
+        font-size: 30px;
     }
-    
-    .container h3 {
+
+    .block h3 {
         font-size: 12px;
-    }
-
-    .container h4 {
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 20px;
-    }
-
-    .input-bar {
-        padding: 8px 20px 8px 10px;
     }
 
     .image img {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
+}
 
-    button {
-        padding: 7px 14px;
-        font-size: 12px;
+@media only screen and (max-width: 400px) {
+    .image img {
+        width: 250px;
+        height: auto;
     }
 }
 
 @media only screen and (max-width: 350px) {
     .image img {
         display: none;
-    }
-
-    .input-bar {
-        padding: 8px 10px 8px 10px;
-    }
-
-    form {
-        margin-left: 0px;
     }
 }
