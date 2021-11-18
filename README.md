@@ -1,3 +1,5 @@
+![](./static/webapp/images/iMac_2.jpg)
+
 # English Dictionary WebApp
 
 This is a Django project to create an english dictionary which provides meaning of the word along with synonyms & antonyms.
